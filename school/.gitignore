@@ -1,2 +1,4 @@
 school/__init__.pyc school/locals.pyc school/settings.pyc school/urls.pyc school/wsgi.pyc
 school/locals.py
+common/admin.pyc common/__init__.pyc common/models.pyc common/views.pyc
+stores/admin.pyc stores/__init__.pyc stores/models.pyc
