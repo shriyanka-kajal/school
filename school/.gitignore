@@ -1,5 +1,6 @@
 school/*.pyc
 stores/*.pyc
+common/*.pyc
 stores/migrations/*.pyc
 school/__init__.pyc
 school/locals.pyc 
