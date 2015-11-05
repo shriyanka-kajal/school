@@ -29,7 +29,7 @@ class UserProfile(BaseModel):
 	user = models.ForeignKey(User)
 	address = models.CharField(max_length = 50, null=True,blank=True)
 	address_fk = models.ForeignKey(Address,max_length = 50,null=True,blank=True)
-	mobile = RegexValidator(regex=r'\d{10}$', message="Phone number must be 10 digits entered without +91")
+	mobile = RegexValidator(regex=r'\d[0-9]{10}$', message="Phone number must be 10 digits entered without +91")
 	phone = models.CharField(blank=True, null=True, max_length=15)
 	ip = models.CharField(blank=True, null=True, max_length=50, default="") #store real ip from  requests meta field
 	country = models.CharField(blank=True, null=True, max_length=50, default="India")

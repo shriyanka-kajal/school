@@ -1,0 +1,18 @@
+.navbar {
+	background-color:#c51162 ;
+	height: 35px;
+}
+
+.navigation {
+	color: white;
+}
+
+.nav .li a:focus {
+background-color: none;
+}
+
+.strap {
+	border-color: white;
+	background-color: black;
+	border-width: 2px;
+}
