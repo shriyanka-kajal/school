@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'stores',
     'common',
     'colorful',
+    'color',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,6 +52,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'color.middleware.SetColorMiddleware',
 )
 
 ROOT_URLCONF = 'school.urls'
@@ -68,6 +70,8 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'django.template.context_processors.static',
+                'django.contrib.auth.context_processors.auth',
+                'django.template.context_processors.csrf'
             ],
         },
     },
@@ -91,9 +95,10 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = True
+#use {% load %} tag to load in template
+USE_I18N = True #for internationalization
 
-USE_L10N = True
+USE_L10N = True #for localization
 
 USE_TZ = True
 
